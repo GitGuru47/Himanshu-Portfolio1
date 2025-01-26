@@ -32,3 +32,37 @@ lightbox.addEventListener('click', (e) => {
         lightbox.style.display = 'none';
     }
 });
+
+// Skills Fade-In Animation on Scroll
+const skillItems = document.querySelectorAll('.skill-item');
+
+const handleScroll = () => {
+    const triggerPoint = window.innerHeight * 0.8;
+
+    skillItems.forEach(item => {
+        const itemTop = item.getBoundingClientRect().top;
+
+        if (itemTop < triggerPoint) {
+            item.classList.add('active');
+        }
+    });
+};
+
+window.addEventListener('scroll', handleScroll);
+
+// Scroll Animation for Work Timeline
+const timelineItems = document.querySelectorAll('.timeline-content');
+
+const handleWorkScroll = () => {
+    const triggerBottom = window.innerHeight * 0.85;
+
+    timelineItems.forEach(item => {
+        const itemTop = item.getBoundingClientRect().top;
+
+        if (itemTop < triggerBottom) {
+            item.classList.add('active');
+        }
+    });
+};
+
+window.addEventListener('scroll', handleWorkScroll);
