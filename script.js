@@ -10,6 +10,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// Smooth scroll to the contact section when the "Contact Me" button is clicked
+document.querySelector('.btn').addEventListener('click', function (e) {
+    e.preventDefault();
+    const contactSection = document.querySelector('#contact');
+    contactSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});
+
+
+
 // Lightbox Effect for Image Galleries
 const galleryItems = document.querySelectorAll('.gallery-item');
 const lightbox = document.createElement('div');
