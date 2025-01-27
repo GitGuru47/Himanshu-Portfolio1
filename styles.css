@@ -40,7 +40,7 @@ header nav ul li a:hover {
     color: #f4a261;
     transition: color 0.3s ease;
 }
-  
+
 /* About Me Section */
 #about {
     background: linear-gradient(135deg, #f5f7fa, #e8eef5);
@@ -136,7 +136,6 @@ header nav ul li a:hover {
         margin-bottom: 20px;
     }
 }
-
 
 /* Social Media Icons */
 #social-media {
